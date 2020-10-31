@@ -4,6 +4,6 @@ function salary(hours_worked,extra_hours){
     let total = idealSalary + overtime;
     return total
 }
-hours_worked = windows.prompt('How many hours worked: ');
-extra_hours = windows.prompt('How many extra hours worked: ');
+hours_worked = prompt('How many hours worked: ');
+extra_hours = prompt('How many extra hours worked: ');
 console.log(salary(hours_worked,extra_hours))
