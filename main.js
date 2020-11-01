@@ -1,9 +1,19 @@
-function salary(hours_worked,extra_hours){
-    let idealSalary = hours_worked * 1000;
-    let overtime = extra_hours * 200;
-    let total = idealSalary + overtime;
+function salary(hours_worked){
+    if (hours_worked <= 4){
+      var idealSalary = 1000 * hours_worked;
+    }
+  
+    let extra_hours = hours_worked - 4;
+  
+  
+    if(hours_worked > 4){
+    var newSalary = 200 * (extra_hours) + (1000 * hours_worked)
+    }
+  
+    let total = newSalary;
     return total
 }
 hours_worked = prompt('How many hours worked: ');
-extra_hours = prompt('How many extra hours worked: ');
-console.log(salary(hours_worked,extra_hours))
+//display salary
+
+console.log(salary(hours_worked))
