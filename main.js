@@ -1,6 +1,6 @@
 function salary(hours_worked){
     if (hours_worked <= 4){
-      var idealSalary = 1000 * hours_worked;
+      var newSalary = 1000 * hours_worked;
     }
   
     let extra_hours = hours_worked - 4;
